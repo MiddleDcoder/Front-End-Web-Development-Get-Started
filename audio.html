@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio API</title>
+    </head>
+
+<body>
+    <audio>
+        <source src="ThisisHomebyCaveTown.mp3" type="audio/mpeg">
+      <!--<source src="ThisisHomebyCaveTown.ogg" type="audio/ogg">-->
+        Your browser does not support the <code>audio</code> element.
+    </audio>
+    <script>
+        var audio;
+        window.addEventListener('load', init, false);
+        window.addEventListener
+        function init(){
+            audio = document.getElementsByTagName('audio')[0];
+            audio.play();   
+        }
+    </script>
+</body>
+
+</html>
