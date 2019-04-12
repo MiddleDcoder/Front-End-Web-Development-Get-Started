@@ -5,15 +5,22 @@
     </head>
 
 <body>
-    <audio>
+    <audio controls>
         <source src="ThisisHomebyCaveTown.mp3" type="audio/mpeg">
       <!--<source src="ThisisHomebyCaveTown.ogg" type="audio/ogg">-->
         Your browser does not support the <code>audio</code> element.
     </audio>
     <script>
         var audio;
-        window.addEventListener('load', init, false);
-        window.addEventListener
+        // window.addEventListener('load', init, false);
+        // window.addEventListener('click', playPause, false);
+        function playPause(){
+            if(audio.paused){
+                audio.play();
+            }else{
+                audio.pause();
+            }
+        }
         function init(){
             audio = document.getElementsByTagName('audio')[0];
             audio.play();   
