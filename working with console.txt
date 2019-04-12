@@ -1,0 +1,2 @@
+console.log(document) - will result the codes -- or just type document
+console.dir(document) - will show the URI and other networking

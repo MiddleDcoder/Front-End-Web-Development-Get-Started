@@ -1,0 +1,17 @@
+html 
+
+<button onClick="javascript:
+alert('clicked');">
+Click Me
+</button>
+
+
+
+css
+
+
+
+
+button {
+  color: #ED652E;
+}
