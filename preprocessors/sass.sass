@@ -1,0 +1,27 @@
+$primary-orange: #ED652E;
+$primary-gray: #EBEBEB;
+$content-width: 780px;
+$total-width: 1000px;
+
+
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius:$radius;
+    border-radius: $radius;
+}
+
+.content-box {
+    background-color: $primary-gray;
+    @include border-radius(5px)
+    width: $content-width;
+    .header{
+        color: $primary-orange;
+    }
+}
+
+.secondary {
+    width: $total-width - $content-width;
+
+}

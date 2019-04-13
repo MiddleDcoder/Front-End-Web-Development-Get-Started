@@ -1,0 +1,96 @@
+/* css preprocessors examples are :
+Less,
+SASS - SCSS , SASS, Compass
+Stylus
+ */
+
+h1{
+    color: #ED652E;
+}
+div.content {
+    color: #ED652E;
+}
+.header{
+    background-color: #EBEBEB;
+}
+.footer{
+    background-color: #EBEBEB;
+}
+/* example */
+primary-orange: #ED652E;
+primary-gray: #EBEBEB;
+
+h1{
+    color: primary-orange;
+}
+div.content {
+    color: primary-orange;
+}
+.header{
+    background-color: primary-gray;
+}
+.footer{
+    background-color: primary-gray;
+}
+
+div.content {
+    width: 780px;
+}
+
+div.secondary {
+    width:220px;
+}
+/*example */
+content-width: 780px;
+total-width: 1000px;
+div.content {
+    width: content-width;
+}
+
+div.secondary {
+    width: content-width - total-width;
+}
+
+.box{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+/* example */
+box{
+    mixin-border-radius(10px);
+}
+mixin-border-radius(radius){
+    -webkit-border-radius: radius;
+    -moz-border-radius: radius;
+    -ms-border-radius: radius;
+    -o-border-radius: radius;
+    border-radius: radius;
+}
+
+/* Nested rules example */
+
+.content{
+    color: #555;
+}
+
+.content span {
+    padding: 3px;
+}
+
+.content h3 {
+    margin-top: 2px;
+}
+/* LOGICAL WAY */
+
+.content {
+    color: #555;
+    span{
+        padding: 3px;
+    }
+    h3 {
+        margin-top: 2px;
+    }
+}

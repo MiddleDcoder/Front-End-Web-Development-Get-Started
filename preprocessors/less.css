@@ -1,0 +1,16 @@
+.content-box {
+    background-color: #ebebeb;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    width: 780px;
+}
+
+.content-box .header {
+    color: #ed652e;
+}
+
+.secondary {
+    width: 220px;
+}
