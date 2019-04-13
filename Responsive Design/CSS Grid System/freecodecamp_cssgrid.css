@@ -1,0 +1,56 @@
+/** .wrapper {
+    display: grid;
+    grid-template-columns: 200px 50px 100px;
+    grid-template-rows: 100px 30px;
+} **/
+/*
+*making the grid undestandable
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 50px 100px;
+    grid-template-rows: 100px 30px;
+}
+*/
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+/*
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+}*/
+
+/* is the same above
+.item1 {
+    grid-column: 1 / 4;
+} */
+/*
+* .item1{
+    grid-column: 1 / 3;
+}
+
+.item3{
+    grid-row:  2 / 4;
+}
+
+.item4{
+    grid-column:  2 / 4;
+}*/
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item3 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.item4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}

@@ -20,20 +20,48 @@ h1 {
     h1{
         font-size: 10px;
     }
+.sidebar {
+        width: 33%;
+ 	margin-top:20xp;
+    }
+    .content {
+        width: 66%;
+       margin-top:20xp;
+    }
 }
 
 /* The rule of classes and id's if 799 to the lowest it will effect the float and other function*/
 /*If 800 up the result will do nothing changes should be normal*/
+
+
 @media (min-width: 800px){
     .sidebar {
         width: 33%;
-        float:left;
+       float: left;
     }
     .content {
         width: 66%;
         float: left;
     }
     h1 {
-        font-size: 24px;
+         font-size: 24px;
     }
 }
+
+/* @media (min-width: 800px)
+	the h1 - will effect 800 to 1000 or above 
+	the float and width - will effect 799 to 600
+
+*/
+
+/* @media (min-width: 600px)
+	the h1 - will effect 600 to 800 or above 
+	the float and width from  @media (min-width: 800px)  - will effect 799 to 600 and 600 to the lowest
+	then the font if 599px will set to the normal defaulted font.
+
+	NOTE: 
+		H1 - effect goes up 
+		the class floated - effect downward.
+		
+	
+*/

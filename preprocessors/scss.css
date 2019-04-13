@@ -1,14 +1,14 @@
-/* No CSS *//*# sourceMappingURL=sass.css.map */
-
 .content-box {
-    background-color: #ebebeb;
-    -webkit-border-radius: 5px;
-    -moz-border-radius:5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    width: 780px; }
+  background-color: #EBEBEB;
+  border-radius: 5px;
+  width: 780px;
+}
+
 .content-box .header {
-    color: #eb652e;} 
-    .secondary {
-    width: 220ox;} 
+  color: #ED652E;
+}
+
+.secondary {
+  width: 220px;
+}
+/*# sourceMappingURL=scss.css.map */
