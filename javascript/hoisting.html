@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript Lessons in Pluralsight</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
+   
+</head>
+<body>
+    <h1>This is Hoisting of Javascript lessons</h1>
+    
+</body>
+
+<script>
+/*
+    //undefined
+var a;
+console.log(a);
+a = 3;
+
+//function declaration
+function functionOne(){
+    // my code
+}
+*/
+/*
+//function expression
+var functionTwo = function(){
+    // my  code
+}
+*/
+/*
+//proper hoisting
+console.log(functionOne);
+console.log( functionTwo);
+
+//this is hoisted
+function functionOne(){
+    // my code
+}
+
+//only the variable is hoisted
+var functionTwo = function () {
+    // my code
+}
+*/
+var fiveFact = factorial(5);
+
+/*
+function factorial(arg){
+    //factorial implementation
+    console.log('factorial!');
+
+}
+*/
+var factorial = function(arg){
+    //factorial expression 
+    //this will result error
+    console.log('factorial!');
+
+}
+
+
+</script>
+</html>
