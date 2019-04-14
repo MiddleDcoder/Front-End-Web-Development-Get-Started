@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript Lessons in Pluralsight</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
+   
+</head>
+<body>
+    <h1>This is Asynchronous Nature of Javascript lessons</h1>
+    
+</body>
+<!--Javascript goes here-->
+<script type="text/javascript">
+
+/* first example
+function fakeAjax(cb){
+    setTimeout(function(){
+        cb('ajax data');
+    }, 1000);
+}
+
+console.log('start');
+fakeAjax(function(data){
+    console.log('ajax returned: ' + data);
+});
+console.log('end'); 
+*/ 
+//output of first example 
+//start 
+//end
+// ajax returned: data
+
+
+
+//second example
+function fakeAjax(cb){
+    setTimeout(function(){
+        cb('ajax data');
+    }, 1000);
+}
+
+console.log('start');
+fakeAjax(processData);
+console.log('end'); 
+
+function processData(data){
+    console.log('I have processed the data: ' + data);
+}
+
+//output of second output
+//start
+//end
+//I have processed the data: ajax data
+
+//exploring if you will write the code fakeAjax(processData());
+//the output will be 
+//start
+//I have processed the data: ajax data
+//end
+
+</script>
+</html>
