@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript Lessons in Pluralsight</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
+   
+</head>
+<body>
+    <h1>This is Scopes & Closures of Javascript lessons</h1>
+    
+</body>
+
+<script>
+    /* this code has no result but showing the scopes
+    //Scopes   
+    //function declaration
+    function setup(){
+        var utilities = getUtilities();
+        var setting = getLocalStorageSettings();
+        if(settings === undefined) {
+            setttings = getDefaultSettings();
+        }
+
+        window.app = {
+            utilities: utilities,
+            settings: settings
+        }
+    }
+    setup();
+*/
+
+// imediately invoke function expression
+//this code is showing a temporary private scope
+
+/*
+(function(){
+    //this two variable will go out of scope
+        var utilities = getUtilities();
+        var setting = getLocalStorageSettings();
+        if(settings === undefined) {
+            setttings = getDefaultSettings();
+        }
+
+        window.app = {
+            utilities: utilities,
+            settings: settings
+        }
+    }());
+*/
+
+//Closures Example
+function ajax(cb){
+    setTimeout(function() {
+        cb('Approved');
+    }, 1000);
+}
+
+function showUserApproval() {
+    var user = { name: 'Joe Eames'}
+
+    return function(){
+        console.log(user.name);
+    }
+}
+
+var newFunc = showUserApproval();
+newFunc();
+
+//another example of scopes
+var inGlobal = true;
+
+// this code will not gonna work because the variable someMsg is in scope not a global 
+//console.log(someMsg);
+
+function testMe(){
+    console.log("testMe(): " + inGlobal);
+    
+    //this is the scoped code
+    //someMsg variable can only be access at this function testMe()
+    //this is called SCOPE
+    var someMsg = "Some Message";
+    console.log("testMe(): " + someMsg);
+
+}
+//this is error
+// console.log("global: " + someMsg);
+testMe();
+
+
+//Closures another Example
+//Closure is allow access to outer variable within inner scopes
+
+
+
+    //scope lessons
+        //NOTE this code won't run, but only explaining the purpose of closure
+    var inGlobal = true;
+
+    function testMe() {
+        console.log("testMe(): " + inGlobal);
+
+        //var someMsg = "some Message"; ----------- this code is in a scope
+        var someMsg = "some Message";
+        console.log("testMe(); " + someMsg);
+
+        showItThen("with Closure", function (){
+            //it's necessary for this additonal callback to access the variable someMsg
+            //this is called a CLOSURE
+        showIt("testMe With Closure(); " + someMsg);
+        });
+
+    }
+    //output
+    //with Closure
+    //testMe With Closure(); some Message
+
+    //NOTE
+    /* Closures are made up of Scopes if a Scope can access a variable from an inner scope this is called CLOSURE
+    * Scope are made up of Function if a Function have variable that can only be access within a function is called SCOPE
+        */
+
+</script>
+</html>
+
