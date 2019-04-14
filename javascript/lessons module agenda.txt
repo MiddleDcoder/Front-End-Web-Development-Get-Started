@@ -1,0 +1,8 @@
+1. Introduction
+2. Objects
+3. Asynch Nature of Javascript
+4. Hoisting
+5. Scope & Closures
+6. Context & this
+
+Recommendation for improvement in this lesson. - Javascript the Good Parts in Pluralsight
