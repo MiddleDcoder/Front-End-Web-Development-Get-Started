@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript Lessons in Pluralsight</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="context&this.js"></script>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+   <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
+   
+</head>
+<body>
+    <h1>This is Context and This of Javascript lessons</h1>
+    Mark all <button class="all">Yes</button>
+    <button class="all">No</button>
+    <div class="answer">?</div>
+    <div class="answer">?</div>
+    <div class="answer">?</div>
+</body>
+
+<script>
+//Jquery code goes here
+// this purpose
+$(function() {
+    $('.all').click(function() {
+        var that =  this;
+        $('.answer').each(function() {
+            $(this).text($(that).text());
+        });
+    });
+});
+
+
+</script>
+
+</html>
