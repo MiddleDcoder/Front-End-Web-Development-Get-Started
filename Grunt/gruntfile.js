@@ -5,6 +5,6 @@ module.exports = function(grunt){
             jsFiles: ['js/**/*.js']
         }
     });
-    grunt.loadNpmTask('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
 
 };
