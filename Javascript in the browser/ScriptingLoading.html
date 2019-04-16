@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript In the Browser</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
+    <script src="buttons.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="addins.js"></script>
+    <script src="utilities.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <h1>Enter a Search Phrase</h1>
+    <div class="center">
+        <input id="searchPhrase" type="text" autofocus/><br>
+        <button id="search" class="left">Search</button>
+        <button id="firstResult" class="right">First Result</button>
+    </div>
+</body>
+<h5>in Console = Global Object</h5>
+<pre>
+window.title
+"Search"
+var searchPhrase = "Funny Cat Videos"
+undefined
+window.searchPhrase
+"Funny Cat Videos"
+window.searchPhrase = "Funny Cat Videos"
+"Funny Cat Videos"
+windows.$
+VM956:1 Uncaught ReferenceError: windows is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM956:1
+window.$
+ƒ (a,b){return new r.fn.init(a,b)}
+</pre>
+</html>
