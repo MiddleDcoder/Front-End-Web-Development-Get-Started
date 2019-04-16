@@ -1,0 +1,21 @@
+{
+  "name": "GruntJLA",
+  "version": "1.0.0",
+  "description": "Grunt Task Runner",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "G:\\0. Web Developer\\1. Front-End Developer and Front-End Wordpress Developer\\other files\\Pluralsight lessons\\Front-End Web Development Get Started"
+  },
+  "keywords": [
+    "Grunt"
+  ],
+  "author": "Jhun Lorenz Asna",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^1.0.4"
+  }
+}
