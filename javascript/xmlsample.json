@@ -1,0 +1,19 @@
+{
+"courses" : {
+    "id" : "25",
+    "title" : "Why XML Sucks",
+    "description" : "This course will help you to master the universe.",
+    "author" : "Joe Eames",
+    "modules" : [
+        {
+            "title" : "Angle Bracket Hell",
+            "length" : "34:21"
+        },
+        {   "title" : "Ginormous Payloads",
+            "length" : "23:55"
+        }   
+    ] 
+    
+  }
+
+}
