@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dev Tools example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+
+</head>
+<body>
+    <h1>Enter a search Phrase</h1>
+        <div class="searchClass">
+        <input id="searchPhrase" type="search">
+        <br>
+            <div class="searchButton">
+        <button type="submit">Search</button>
+        <button type="submit">Find Result</button>
+            </div>
+        </div>  
+        <!-- NOTE: always put jquery and then framework first before javascript files
+        and always put the scripts in the button before closing of the body tag -->
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="main.js"></script>
+</body>  
+</html>
+
+<!-- 
+$(function() {
+    $('.searchButton').click(function() {
+        if($('#searchPhrase').val().length > 0){
+            alert('searched for ' + $('#searchPhrase').val());
+        }
+    });
+});  -->
