@@ -1,0 +1,15 @@
+Multiple Browser Testing
+1. Visual Testing
+Manual Inspection
+Browser Differences
+Visual Regressions
+
+2. Non Visual
+Functionality
+Browser Support
+Code Regressions
+
+Tools to use : 
+1. Karma   
+for more information about KARMA
+https://bit.ly/1mt2v80
