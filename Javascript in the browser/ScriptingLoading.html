@@ -37,4 +37,21 @@ VM956:1 Uncaught ReferenceError: windows is not defined
 window.$
 ƒ (a,b){return new r.fn.init(a,b)}
 </pre>
+
+<h5>The DOM in console</h5>
+<pre>
+    var results = document.createElement('div');
+
+    document.getElementsByTagName('body')[0].appendChild(results);
+
+    var results = document.createElement('div');
+undefined
+ document.getElementsByTagName('body')[0].appendChild(results);
+
+<div>​</div>​
+results.innerText = "These are the results"
+"These are the results"
+
+
+</pre>
 </html>
