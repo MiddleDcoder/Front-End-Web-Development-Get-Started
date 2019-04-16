@@ -1,3 +1,5 @@
+XHR - communicating to the server
+
 Test this in console with a network connected.
 Console command keys
 $ - will check the jquery used in a browser

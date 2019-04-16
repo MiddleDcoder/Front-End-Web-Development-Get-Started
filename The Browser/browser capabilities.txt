@@ -1,0 +1,10 @@
+Evergreen Browsers - 
+Auto-Updating
+
+Caniuse.com - will help you out what your Browser can support.
+
+unsupported features - what to do
+Techniques : 
+Fallbacks
+Polyfills
+Progressive Enhancement
