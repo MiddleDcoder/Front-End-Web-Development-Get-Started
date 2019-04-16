@@ -1,0 +1,6 @@
+Test this in console with a network connected.
+Console command keys
+$ - will check the jquery used in a browser
+jQuery - the same will show a function 
+$.fn.jQuery - show the version of jQuery
+$.get('/', function(data) { console.log(data)}); -- result whole bunch of html
