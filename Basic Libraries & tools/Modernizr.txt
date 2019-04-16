@@ -1,4 +1,7 @@
-modernizr.com/download
-To help check support
+modernizr.com/download 
+To help check support  - Modernizr tells you what HTML, CSS and JavaScript features the user’s browser has to offer. 
 CSS3
 HTML5
+
+
+Learn Modernizr - if you want to dig in and dive deep in this front-end topics
