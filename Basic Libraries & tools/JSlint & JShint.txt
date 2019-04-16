@@ -1,0 +1,8 @@
+efi
+to user strict
+
+(function() {
+	'user strict';
+
+	
+}());
