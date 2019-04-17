@@ -1,0 +1,2 @@
+install locally
+npm install gulp gulp-jshint
