@@ -1,0 +1,2 @@
+Always put the css in the head tag
+always put the Scripts above the body end tag
