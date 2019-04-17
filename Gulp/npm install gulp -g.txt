@@ -1,2 +1,6 @@
 install locally
 npm install gulp gulp-jshint
+
+VScode jshint
+
+Please install JSLint in your workspace folder using 'npm install jslint' or globally using 'npm install -g jslint' and then press Retry.

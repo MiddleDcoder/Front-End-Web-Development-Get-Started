@@ -14,5 +14,8 @@
     "gulpfile"
   ],
   "author": "JhunLorenzAsna",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jslint": "^0.12.1"
+  }
 }
